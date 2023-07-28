@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Matching Recipes</title>
+</head>
+<body>
+    <h1>Recipes for {{ recipe_type }}:</h1>
+    {% if recipes %}
+        <ul>
+            {% for recipe in recipes %}
+                <li>{{ recipe }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No recipes found for {{ recipe_type }}.</p>
+    {% endif %}
+</body>
+</html>
+
