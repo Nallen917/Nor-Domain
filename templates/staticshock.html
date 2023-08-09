@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Static HTML Page</title>
+<style> 
+
+    li { font-size: 50px; } 
+
+</style>
+</head>
+<body>
+    <h1>The Name's Static. I Put a Shock to Your Email!</h1>
+    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/093b1f7c-cf07-4a0b-ab9f-c7488962154a/ddar61a-1cbf1a56-b74e-484e-9610-6824cc641f7b.jpg/v1/fit/w_828,h_1184,q_70,strp/static_shock_by_frightfox_ddar61a-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA5M2IxZjdjLWNmMDctNGEwYi1hYjlmLWM3NDg4OTYyMTU0YVwvZGRhcjYxYS0xY2JmMWE1Ni1iNzRlLTQ4NGUtOTYxMC02ODI0Y2M2NDFmN2IuanBnIiwiaGVpZ2h0IjoiPD0xODI5Iiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uud2F0ZXJtYXJrIl0sIndtayI6eyJwYXRoIjoiXC93bVwvMDkzYjFmN2MtY2YwNy00YTBiLWFiOWYtYzc0ODg5NjIxNTRhXC9mcmlnaHRmb3gtNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX0.QLB_5RagD1on59mF43CyD2jd8l7zdxDLzXUMZNbfp0Y" alt="Avatar" style="width:650px">
+    <ul>
+        {% for email in email_list %}
+            <li>{{ email }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
